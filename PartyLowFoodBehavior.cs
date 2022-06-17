@@ -22,7 +22,7 @@ namespace PartyLowFood
                 MBTextManager.SetTextVariable("PLURAL", (num2 > 1) ? 1 : 0);
                 if (num2 <= 3 && num2 > 0)
                 {
-                    InformationManager.AddQuickInformation(new TextObject("Your party is low on food. You have {REMAINING_FOOD} {?PLURAL}days{?}day{\\?} until no food.", null), 0, null, "");
+                    MBInformationManager.AddQuickInformation(new TextObject("Your party is low on food. You have {REMAINING_FOOD} {?PLURAL}days{?}day{\\?} until no food.", null), 0, null, "");
                 }
             }
         }
