@@ -7,12 +7,13 @@ namespace PartyLowFood
     // This mod warns the player when their party is low on food.
     public class PartyLowFoodSubModule : MBSubModuleBase
     {
-        protected override void OnGameStart(Game game, IGameStarter gameStarter)
+        protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             if (game.GameType is Campaign)
             {
-                CampaignGameStarter campaignStarter = (CampaignGameStarter)gameStarter;
-                campaignStarter.AddBehavior(new PartyLowFoodBehavior());
+                CampaignGameStarter campaignGameStarter = (CampaignGameStarter)gameStarterObject;
+
+                campaignGameStarter.AddBehavior(new PartyLowFoodBehavior());
             }
         }
     }
