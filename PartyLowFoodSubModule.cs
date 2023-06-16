@@ -11,9 +11,7 @@ namespace PartyLowFood
         {
             if (game.GameType is Campaign)
             {
-                CampaignGameStarter campaignGameStarter = (CampaignGameStarter)gameStarterObject;
-
-                campaignGameStarter.AddBehavior(new PartyLowFoodBehavior());
+                ((CampaignGameStarter)gameStarterObject).AddBehavior(new PartyLowFoodBehavior());
             }
         }
     }
