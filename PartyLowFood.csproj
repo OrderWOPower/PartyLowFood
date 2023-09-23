@@ -56,7 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PartyLowFoodBehavior.cs" />
+    <Compile Include="PartyLowFoodCampaignBehavior.cs" />
     <Compile Include="PartyLowFoodSubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
