@@ -25,7 +25,7 @@ namespace PartyLowFood
                 if (daysUntilNoFood <= 3 && daysUntilNoFood > 0)
                 {
                     // Display a warning message when the player's party has less than or equal to 3 days of food left.
-                    MBInformationManager.AddQuickInformation(new TextObject("Your party is low on food. You have {REMAINING_FOOD} {?PLURAL}days{?}day{\\?} until no food.", null), 0, null, "");
+                    MBInformationManager.AddQuickInformation(new TextObject("Your party is low on food. You have {REMAINING_FOOD} {?PLURAL}days{?}day{\\?} until no food.", null), 0, null, null, "");
                 }
             }
         }
